@@ -5,7 +5,7 @@
 + Linear Search
 + Binary Search
 
-### Linear Search
+### 1. Linear Search
 + It is simple and straight forward search algorithm used to find a specific element within an array or list
 
 #### Advantages
@@ -55,7 +55,7 @@ public class demo {
 }
 ```
 
-### Binary Search
+### 2. Binary Search
 + It is an efficient search algorithm used to find a specific element within a `sorted` array or list.
 + It works by repeteadely dividing the search interval in half and comparing the middle element with the target value.
 
