@@ -93,6 +93,41 @@ public class demo {
 + We have to use Binary Search in Sorted Array
 
 ```java
+public class demo {
+    public static int binarySearch(int num[], int target) {
+        int start = 0;
+        int end = num.length - 1;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (num[mid] == target) {
+                return mid;
+            } else if (num[mid] > target) {
+                end = mid - 1;
+            } else if (num[mid] < target) {
+                start = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int num[] = { 1, 3, 5, 6, 8, 9 };
+        int target = 9;
+
+        int idx = binarySearch(num, target);
+        if (idx == -1) {
+            System.out.println("Target value not found");
+
+        } else {
+            System.out.println("Target value found  " + idx);
+        }
+    }
+}
+
+```
+
+```java
 import java.util.Scanner;
 
 public class demo {
