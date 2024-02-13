@@ -58,6 +58,35 @@ public class demo {
 
 ```
 
+### Pair
+```java
+public class demo {
+    public static void pair(int num[]) {
+        for (int i = 0; i < num.length; i++) {
+            for (int j = i + 1; j < num.length; j++) {
+                System.out.print("(" + num[i] + "," + num[j] + ")");
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void main(String[] args) {
+        int num[] = { 1, 3, 5, 6, 8 };
+        pair(num);
+    }
+}
+
+
+```
+```
+// output
+(1,3)(1,5)(1,6)(1,8)
+(3,5)(3,6)(3,8)
+(5,6)(5,8)
+(6,8)
+
+```
+
 ### Reversal in An Array
 
 ```java
