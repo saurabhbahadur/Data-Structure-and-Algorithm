@@ -17,6 +17,33 @@
 + When n is big then there time complexity is high
 
 ```java
+public class demo {
+    public static int linearSearch(int num[], int target) {
+        for (int i = 0; i <= num.length; i++) {
+            if (num[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int num[] = { 1, 3, 5, 6, 8, 9 };
+        int target = 6;
+
+        int idx = linearSearch(num, target);
+        if (idx == -1) {
+            System.out.println("Target value not found");
+
+        } else {
+            System.out.println("Target value found  " + idx);
+        }
+    }
+}
+
+```
+
+```java
 import java.util.Scanner;
 
 public class demo {
