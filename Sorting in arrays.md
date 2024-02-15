@@ -146,6 +146,37 @@ public class demo {
 }
 ```
 
+```java
+public class demo {
+    public static void selectionSort(int arr[]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int min_pos = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[min_pos] > arr[j]) {
+                    min_pos = j;
+                }
+            }
+            int temp = arr[min_pos];
+            arr[min_pos] = arr[i];
+            arr[i] = temp;
+        }
+    }
+    public static void printArray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 8, 2, 7, 9, 10 };
+        selectionSort(arr);
+        printArray(arr);
+
+    }
+}
+
+
+```
  
 
 
