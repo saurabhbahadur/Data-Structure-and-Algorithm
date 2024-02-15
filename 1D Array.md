@@ -107,6 +107,35 @@ public class demo {
 }
 ```
 
+```java
+public class demo {
+    public static void reverse(int num[]) {
+        int start = 0;
+        int end = num.length - 1;
+        while (start < end) {
+            int temp = num[end];
+            num[end] = num[start];
+            num[start] = temp;
+
+            start++;
+            end--;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int num[] = { 1, 3, 5, 6, 8 };
+
+        reverse(num);
+        for (int i = 0; i < num.length; i++) {
+            System.out.println(num[i]);
+        }
+    }
+}
+
+
+```
+
 ### Missing Numbers in an Array
 
 ```java
